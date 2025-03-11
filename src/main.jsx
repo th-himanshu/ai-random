@@ -1,9 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
 import App from "./App.jsx";
-import Sitemap from "./pages/Sitemap.jsx";  // Ensure these files exist
+import Sitemap from "./pages/Sitemap.jsx";
 import Robots from "./pages/Robots.jsx";
 import "./index.css";
 import Healthcare from "./pages/Healthcare.jsx";

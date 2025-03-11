@@ -1,7 +1,7 @@
 import { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const Home = lazy(() => import("./pages/Home"));
-const HealthcareDetails = lazy(() => import("./pages/HealthcareDetails"));
+const Healthcare = lazy(() => import("./pages/Healthcare.jsx"));
 const FinanceDetails = lazy(() => import("./pages/FinanceDetails"));
 const ManufacturingAndAutomotiveDetails = lazy(() => import("./pages/ManufacturingAndAutomotiveDetails"));
 const EducationDetails = lazy(() => import("./pages/EducationDetails"));
@@ -14,7 +14,7 @@ const App = () => {
       <Routes>
         <Suspense fallback={<div>Loading...</div>}>
           <Route path="/" element={<Home />} />
-          <Route path="/healthcareDetails" element={<HealthcareDetails />} />
+          <Route path="/healthcareDetails" element={<Healthcare />} />
           <Route path="/financeDetails" element={<FinanceDetails />} />
           <Route path="/manufacturingAndAutomotiveDetails" element={<ManufacturingAndAutomotiveDetails />} />
           <Route path="/educationDetails" element={<EducationDetails />} />
