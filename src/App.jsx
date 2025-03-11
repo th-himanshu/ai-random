@@ -9,7 +9,7 @@ import Pricing from "./sections/Pricing";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import WhatsAppChat from "./components/WhatsAppChat";
-import ExploreMorePage from "./pages-dummy/ExploreMorePage";
+// import ExploreMorePage from "./pages-dummy/ExploreMorePage";
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
         <meta name="description" content="Best services for your needs. Explore our features now!" />
         <meta name="keywords" content="React, SEO, Vercel, Web Development, AI, Computer Vision, Generative AI" />
         <meta name="robots" content="index, follow" />
-        
+
         {/* Open Graph Meta Tags (for social media preview) */}
         <meta property="og:title" content="Your Website Title" />
         <meta property="og:description" content="Your website description." />
@@ -47,22 +47,13 @@ const App = () => {
 
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Navbar />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Hero />
-                <Benefits />
-                <Roadmap />
-                <Pricing />
-                <Contact />
-              </>
-            }
-          />
-          <Route path="/explore-more" element={<ExploreMorePage />} />
-        </Routes>
-        
+        <>
+          <Hero />
+          <Benefits />
+          <Roadmap />
+          <Pricing />
+          <Contact />
+        </>
         <Footer />
       </div>
 
