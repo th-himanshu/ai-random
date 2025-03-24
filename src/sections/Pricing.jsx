@@ -81,7 +81,7 @@ const Pricing = () => {
                                     {item.price ? "Get started" : "Contact us"}
                                 </Button> */}
 
-                                <Button className="w-full mb-6" href="/#contact" white={item.price}>
+                                <Button className="w-full mb-6" href="#contact" white={item.price}>
                                     Interested
                                 </Button>
 

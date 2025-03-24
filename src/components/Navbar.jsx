@@ -20,7 +20,7 @@ const navigation = [
     {
         id: "2",
         title: "AI as a Service",
-        // url: "#how-to-use",
+        url: "#how-to-use",
     },
     {
         id: "3",
@@ -75,7 +75,7 @@ const Header = () => {
                             <a
                                 key={item.id}
                                 href={item.url}
-                                onClick={handleClick}
+                                // onClick={handleClick}
                                 className={`block relative font-code text-2xl uppercase text-white transition-colors hover:text-color-1 ${item.onlyMobile ? "lg:hidden" : ""} px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
                                     item.url === pathname.hash ? "z-2 lg:text-white" : "lg:text-white/50"
                                 } lg:leading-5 lg:hover:text-white xl:px-12`}

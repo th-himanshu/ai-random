@@ -44,7 +44,7 @@ const Button = ({ className, href, onClick, children, white }) => {
     );
 
     const renderedLink = (
-        <a href={href} className={classes} onClick={handleClick}>
+        <a href={href} className={classes} >
             <span
                 className={`relative w-full px-5 py-2.5 ${
                     white ? "" : "bg-gray-900"

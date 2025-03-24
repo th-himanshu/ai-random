@@ -55,16 +55,16 @@ const benefits = [
         backgroundUrl: "./src/assets/benefits/card-6.svg",
         iconUrl: benefitIcon2,
         imageUrl: benefitImage2,
-        // url: "#",
+        url: "#",
     },
 ];
 
 
 const Benefits = () => {
     const navigate = useNavigate()
-    const handleNavigation = (navigateTo)=>{
+    const handleNavigation = (navigateTo) => {
         navigate(navigateTo)
-        
+
     }
     return (
         <Section id="features">
@@ -85,16 +85,17 @@ const Benefits = () => {
                                 <p className="body-2 mb-6 text-n-3">{item.text}</p>
                                 <div className="flex items-center mt-auto">
                                     <img src={item.iconUrl} width={48} height={48} alt={item.title} />
-                                <Button className="ml-auto font-code text-xs font-bold text-white uppercase tracking-wider" onClick={()=>handleNavigation(item?.url)} >   
-                                    
-                                       
-                             {item.linkText || " Explore more "} {/* Use dynamic text */} 
-                             
-                                    
-</Button>
-<Arrow />
+                                    <Button className="ml-auto font-code text-xs font-bold text-white uppercase tracking-wider" onClick={() => handleNavigation(item?.url)} >
 
-                                    
+
+                                        {item.linkText || " Explore more "} {/* Use dynamic text */}
+
+
+                                    </Button>
+                                    <a href={item?.url}>
+                                        <Arrow />
+                                    </a>
+
                                 </div>
                             </div>
 
