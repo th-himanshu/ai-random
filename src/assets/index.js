@@ -45,7 +45,7 @@ export { default as benefitIcon1 } from './benefits/icon-1.svg';
 export { default as benefitIcon2 } from './benefits/icon-2.svg';
 export { default as benefitIcon3 } from './benefits/icon-3.svg';
 export { default as benefitIcon4 } from './benefits/icon-4.svg';
-export { default as benefitImage2 } from './benefits/image-2.png';
+export { default as benefitImage2 } from './benefits/benefitImage2.webp';
 
 // Socials Section
 export { default as discordBlack } from './socials/discord.svg';

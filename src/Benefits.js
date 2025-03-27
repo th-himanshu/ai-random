@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import Button from "../components/Button";
 import Heading from "../components/Heading";
 import Section from "../components/Section";
+import benefitImage2WebP from "../assets/benefits/benefitImage2.webp";
+
 
 const benefits = [
   { title: "Healthcare", url: "/healthcareDetails/" },
