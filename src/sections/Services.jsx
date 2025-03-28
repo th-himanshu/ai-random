@@ -7,7 +7,7 @@ const openaiServicesIcons = [recording03, recording01, disc02, chromecast, slide
 
 const Services = () => {
     return (
-        <Section id="how-to-use">
+        <Section >
             <div className="container">
                 <Heading title="Generative AI made for creators." text="OpenAI unlocks the potential of AI-powered applications" />
 

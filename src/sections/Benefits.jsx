@@ -50,15 +50,17 @@ const benefits = [
         text: "Transform the way you live with our AI agents—designed to assist, automate, and elevate your daily experiences. From managing tasks to personalizing recommendations, we bring intelligence and convenience to your fingertips. Embrace the\u00a0future,\u00a0today.",
         backgroundUrl: "./src/assets/benefits/card-6.svg",
         iconUrl: benefitIcon2,
+        imageUrl: benefitImage2,
+        url: "#",
     },
 ];
 
 const Benefits = () => {
+
     const navigate = useNavigate();
     const handleNavigation = (navigateTo) => {
         navigate(navigateTo);
     };
-
     return (
         <Section id="features">
             <div className="container relative z-2">
@@ -75,20 +77,17 @@ const Benefits = () => {
                                 <h5 className="h5 mb-5">{item.title}</h5>
                                 <p className="body-2 mb-6 text-n-3">{item.text}</p>
                                 <div className="flex items-center mt-auto">
-                                    <img
-                                        src={item.iconUrl}
-                                        width={48}
-                                        height={48}
-                                        alt={`Icon for ${item.title} industry`}
-                                        loading="lazy"
-                                    />
-                                    <Button
-                                        className="ml-auto font-code text-xs font-bold text-white uppercase tracking-wider"
-                                        onClick={() => handleNavigation(item?.url)}
-                                    >
-                                        {item.linkText || " Explore more "}
+                                    <img src={item.iconUrl} width={48} height={48} alt={item.title} />
+                                    <Button className="ml-auto font-code text-xs font-bold text-white uppercase tracking-wider" onClick={() => handleNavigation(item?.url)} >
+
+
+                                        {item.linkText || " Explore more "} {/* Use dynamic text */}
+
+
                                     </Button>
-                                    <Arrow />
+                                    <a href={item?.url}>
+                                        <Arrow />
+                                    </a>
                                 </div>
                             </div>
 

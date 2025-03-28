@@ -52,11 +52,11 @@ const Hero = () => {
     const parallaxRef = useRef(null);
 
     return (
-        <Section className="pt-[12rem] -mt-[5.25rem]" crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings id="hero">
+        <Section className="pt-[12rem] -mt-[5.25rem]" crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings id="how-to-use">
             <div className="container relative" ref={parallaxRef}>
                 <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
                     <h1 className="h1 mb-6">
-                    DeepTech Unleashed with GenAI and IoT
+                        DeepTech Unleashed with GenAI and IoT
                         <span className="inline-block relative">
                             <img src={curve} className="absolute top-full left-0 w-full xl:-mt-2" width={624} height={28} alt="" />
                         </span>
@@ -106,7 +106,7 @@ const Hero = () => {
                         <div className="relative z-1 h-6 mx-6 bg-[#1B1B2E]/70 shadow-xl rounded-b-[1.25rem] lg:h-6 lg:mx-20" />
                     </div>
                     <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
-                        <img src={heroBackground} className="w-full" width={1440} height={1800} alt="hero" />
+                        <img src={heroBackground} className="w-full" width={1440} height={1800} alt="how-to-use" />
                     </div>
 
                     <BackgroundCircles />
