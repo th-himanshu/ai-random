@@ -50,7 +50,6 @@ const benefits = [
         text: "Transform the way you live with our AI agents—designed to assist, automate, and elevate your daily experiences. From managing tasks to personalizing recommendations, we bring intelligence and convenience to your fingertips. Embrace the\u00a0future,\u00a0today.",
         backgroundUrl: "./src/assets/benefits/card-6.svg",
         iconUrl: benefitIcon2,
-        imageUrl: benefitImage2,
         url: "#",
     },
 ];
