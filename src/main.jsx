@@ -12,6 +12,7 @@ import Education from "./pages/Education.jsx";
 import EntertainmentAndMedia from "./pages/Entertainment & Media.jsx";
 import ExploreMorePage from "./pages-dummy/ExploreMorePage.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
+import AuthPage from "./pages/AuthPage";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <ScrollToTop />
             <Routes>
                 <Route path="/" element={<App />} />
+                <Route path="/auth" element={<AuthPage />} />
                 <Route path="/healthcareDetails" element={<Healthcare />} />
                 <Route path="/financeDetails" element={<Finance />} />
                 <Route path="/manufacturingAndAutomotiveDetails" element={<ManufacturingAndAutomotive />} /> 
