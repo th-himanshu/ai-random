@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 import { background, DKGLogo } from "../assets";
@@ -36,7 +36,7 @@ const navigation = [
     {
         id: "5",
         title: "Sign in",
-        url: "#login",
+        url: "/auth", // Updated to link to the Login/Signup page
         onlyMobile: true,
     },
 ];
@@ -63,7 +63,7 @@ const Header = () => {
     };
 
     return (
-        <div className={`fixed top-0 left-0 w-full z-50  border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"}`}>
+        <div className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"}`}>
             <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
                 <a className="block w-[12rem] xl:mr-8" href="#hero">
                     <img src={DKGLogo} className="measure" width={120} alt="DKG Labs" />
@@ -107,9 +107,13 @@ const Header = () => {
                 <a href="#contact" className="button hidden mr-8 text-white/50 transition-colors hover:text-white lg:block">
                     Contact
                 </a>
-                <Button className="hidden lg:flex" href="#login">
-                    Sign in
-                </Button>
+
+                {/* Sign In Button Updated */}
+                <Link to="/auth">
+                    <Button className="hidden lg:flex">
+                        Sign in
+                    </Button>
+                </Link>
 
                 <Button className="ml-auto lg:hidden" onClick={toggleNavigation}>
                     <MenuSvg openNavigation={openNavigation} />
