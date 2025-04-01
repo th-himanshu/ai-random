@@ -1,10 +1,10 @@
 # Modern Startup Website
 
-![Showcase Image](https://i.ibb.co/2y7hTzr/Screenshot-2024-05-19-232554.png)
+<!-- ![Showcase Image](https://i.ibb.co/2y7hTzr/Screenshot-2024-05-19-232554.png) -->
 
 This is a modern startup website, made with React.js & TailwindCSS. The whole design is made to be modern, simple and eye-catching. You may use this as project as a starting point for your startup, but make sure you give this repo a star :)
 
-<a href="https://bitbuster-startup-website.vercel.app">View Website</a>
+<a href="https://vleap-dkgs-projects.vercel.app">View Website</a>
 
 
 ## Features
@@ -31,7 +31,7 @@ This is a modern startup website, made with React.js & TailwindCSS. The whole de
 
 ```bash
 
-git clone https://github.com/0xBitBuster/startup-website.git
+git clone https://github.com/DKGGuest/AIWebsite.git
 
 ```
 
