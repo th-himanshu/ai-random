@@ -8,7 +8,7 @@ const ManufacturingAndAutomotiveDetails = lazy(() => import("./pages/Manufacturi
 const EducationDetails = lazy(() => import("./pages/EducationDetails"));
 const EntertainmentAndMediaDetails = lazy(() => import("./pages/EntertainmentAndMediaDetails"));
 const NotFound = lazy(() => import("./pages/NotFound"));
-
+const AIConsultingPage = lazy(() => import("./pages/AiConsultingPage.jsx"));
 const App = () => {
   return (
     <Router>
@@ -16,6 +16,7 @@ const App = () => {
         <Suspense fallback={<div>Loading...</div>}>
           <Route path="/auth" element={<AuthPage />} />
           <Route path="/" element={<Home />} />
+          <Route path="/ai-consulting" element={<AIConsultingPage />} />
           <Route path="/healthcareDetails" element={<Healthcare />} />
           <Route path="/financeDetails" element={<FinanceDetails />} />
           <Route path="/manufacturingAndAutomotiveDetails" element={<ManufacturingAndAutomotiveDetails />} />

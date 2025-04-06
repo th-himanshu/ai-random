@@ -20,7 +20,7 @@ const navigation = [
     {
         id: "2",
         title: "AI as a Service",
-        url: "#how-to-use",
+        url: "/ai-consulting",
     },
     {
         id: "3",
