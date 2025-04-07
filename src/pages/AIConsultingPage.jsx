@@ -3,9 +3,7 @@ import Button from "../components/Button";
 import { Card, CardContent } from "../components/ui/card";
 import { MessageCircle, X } from "lucide-react";
 import React, { useState, lazy, Suspense } from "react";
-
-const Chatbot = lazy(() => import("../components/Chatbot"));
-
+// const Chatbot = lazy(() => import("../components/Chatbot"));
 export default function AIConsultingPage() {
   const [showChatbot, setShowChatbot] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -102,7 +100,7 @@ export default function AIConsultingPage() {
       )}
 
       {/* Chatbot */}
-      {showChatbot && (
+      {/* {showChatbot && (
         <Suspense fallback={<div>Loading Chatbot...</div>}>
           <motion.div 
             initial={{ opacity: 0, y: 20 }} 
@@ -119,7 +117,7 @@ export default function AIConsultingPage() {
             <Chatbot onClose={() => setShowChatbot(false)} />
           </motion.div>
         </Suspense>
-      )}
+      )} */}
 
       {/* ✅ Floating Chat Button */}
       <div className="fixed bottom-6 right-6">

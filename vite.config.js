@@ -18,8 +18,8 @@ export default defineConfig({
         },
       },
     },
-    chunkSizeWarningLimit: 1000, // Increase the warning limit
-    minify: "terser",
-    assetsInlineLimit: 4096, // Inline assets smaller than 4KB
+    // chunkSizeWarningLimit: 1000, // Increase the warning limit
+    // minify: "terser",
+    // assetsInlineLimit: 4096, // Inline assets smaller than 4KB
   },
 });
