@@ -3,7 +3,11 @@ import compression from "vite-plugin-compression";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  plugins: [react(), compression({ algorithm: "brotliCompress" })],
+  plugins: [
+    react(),
+    compression({ algorithm: "brotliCompress" }),
+    compression({ algorithm: "gzip" }),
+  ],
   build: {
     rollupOptions: {
       output: {
@@ -18,8 +22,8 @@ export default defineConfig({
         },
       },
     },
-    // chunkSizeWarningLimit: 1000, // Increase the warning limit
-    // minify: "terser",
-    // assetsInlineLimit: 4096, // Inline assets smaller than 4KB
+    target: "esnext",
+    sourcemap: false,
+    minify: "terser",
   },
 });
