@@ -13,7 +13,7 @@ import EntertainmentAndMedia from "./pages/Entertainment & Media.jsx";
 import ExploreMorePage from "./pages-dummy/ExploreMorePage.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import AuthPage from "./pages/AuthPage";
-import AIConsultingPage from "./pages/AIService";
+import AIService from "./pages/AIService";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
