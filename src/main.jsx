@@ -13,7 +13,7 @@ import EntertainmentAndMedia from "./pages/Entertainment & Media.jsx";
 import ExploreMorePage from "./pages-dummy/ExploreMorePage.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import AuthPage from "./pages/AuthPage";
-import AIConsultingPage from "./pages/AiConsultingPage";
+import AIConsultingPage from "./pages/AIService";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -23,7 +23,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <Routes>
                 <Route path="/" element={<App />} />
                 <Route path="/auth" element={<AuthPage />} />
-                <Route path="/ai-consulting" element={<AIConsultingPage />} />
+                <Route path="/ai-consulting" element={<AIService />} />
                 <Route path="/healthcareDetails" element={<Healthcare />} />
                 <Route path="/financeDetails" element={<Finance />} />
                 <Route path="/manufacturingAndAutomotiveDetails" element={<ManufacturingAndAutomotive />} /> 
